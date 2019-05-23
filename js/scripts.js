@@ -66,9 +66,9 @@ $(function() {
 
     wind.on('scroll', function () {
         $(".skill-progress .progres").each(function () {
-            var bottom_of_object = 
+            var bottom_of_object =
             $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = 
+            var bottom_of_window =
             $(window).scrollTop() + $(window).height();
             var myVal = $(this).attr('data-value');
             if(bottom_of_window > bottom_of_object) {
@@ -87,7 +87,7 @@ $(function() {
 
     var pageSection = $(".bg-img, section");
     pageSection.each(function(indx){
-        
+
         if ($(this).attr("data-background")){
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
@@ -144,7 +144,7 @@ $(window).on("load",function (){
 
 /* ----------------------------------------------------------------
                 [ Preloader ]
------------------------------------------------------------------*/    
+-----------------------------------------------------------------*/
 
     $(".loading").addClass("loading-end").fadeOut(1000);
 
@@ -183,7 +183,7 @@ $(window).on("load",function (){
         $(this).addClass('active').siblings().removeClass('active');
 
     });
-    
+
 
 /* ----------------------------------------------------------------
                 [ contact form validator ]
@@ -216,4 +216,3 @@ $(window).on("load",function (){
     });
 
 });
-
