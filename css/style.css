@@ -921,4 +921,8 @@ footer .copy p {
   }
 }
 
+.linkImage:hover{
+  opacity: 0.85;
+}
+
 /*# sourceMappingURL=style.css.map */
