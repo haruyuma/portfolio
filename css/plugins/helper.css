@@ -472,6 +472,42 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+
+
+
+[data-overlay-green],
+[data-overlay-light] {
+  position: relative;
+}
+
+[data-overlay-green] .container,
+[data-overlay-light] .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+[data-overlay-green]:before,
+[data-overlay-light]:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+[data-overlay-green]:before {
+  background: #096;
+}
+
+[data-overlay-green="8"]:before,
+[data-overlay-light="8"]:before {
+  opacity: 0.8;
+}
+
+
 /*-------------------------------------------------------
 			[ margin-top  (0/100) +5 ]
 -------------------------------------------------------*/
